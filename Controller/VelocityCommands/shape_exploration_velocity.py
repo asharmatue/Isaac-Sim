@@ -1,10 +1,10 @@
 import numpy as np
 
-from grid import grey_grid, normalized_x_steps, normalized_y_steps, number_of_rows, number_of_columns
-from grid import get_pos_of_rho
-from settings import num_robots, r_sense, r_body, r_avoid
-from settings import show_log_in_shape_boundary, show_log_neighbouring_cells, show_log_shape_exploration_velocity
-from util import log
+from Perception.grid import grey_grid, normalized_x_steps, normalized_y_steps, number_of_rows, number_of_columns
+from Perception.grid import get_pos_of_rho
+from Settings.settings import num_robots, r_sense, r_body, r_avoid
+from Settings.settings import show_log_in_shape_boundary, show_log_neighbouring_cells, show_log_shape_exploration_velocity
+from Settings.util import log
 
 
 def psi_weight(arg):

@@ -1,6 +1,6 @@
 import numpy as np
 
-from settings import num_robots, r_sense
+from Settings.settings import num_robots, r_sense
 
 def neighboring_i(robots, robot_index):
 	base_robot = robots[robot_index]

@@ -1,6 +1,6 @@
 import numpy as np
 import omni
-from settings import num_robots
+from Settings.settings import num_robots
 
 from omni.isaac.range_sensor import _range_sensor               # Imports the python bindings to interact with lidar sensor 
 

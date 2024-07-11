@@ -7,9 +7,9 @@ from omni.isaac.sensor import Camera
 
 import numpy as np
 
-from settings import show_walls, show_door, show_grid_vis, show_old_grid_vis, show_victim_cube, show_test_wall
-from grid import create_grid_vis, create_old_grid_vis
-from environment import create_situation_walls
+from Settings.settings import show_walls, show_door, show_grid_vis, show_old_grid_vis, show_victim_cube, show_test_wall
+from Perception.grid import create_grid_vis, create_old_grid_vis
+from Environment.environment import create_situation_walls
 
 def setup_environment(world):
     ### Ground planes ###

@@ -7,12 +7,12 @@
 # license agreement from NVIDIA CORPORATION is strictly prohibited.
 #
 
-import os
-import directory
-directory.directory_setup()
-
+import os, sys
 from omni.isaac.examples.base_sample import BaseSampleExtension
 from main import Main
+
+# Setup the directory when imported
+sys.path.append(str(os.path.dirname(__file__)))
 
 class MainExtension(BaseSampleExtension):
     def on_startup(self, ext_id: str):
@@ -23,7 +23,7 @@ class MainExtension(BaseSampleExtension):
             name="ISBEP Sim",
             title="Exploration Planning Simulation",
             doc_link="https://docs.omniverse.nvidia.com/isaacsim/latest/core_api_tutorials/tutorial_core_hello_world.html",
-            overview="This is ISBEP Sim Code 8 June 2024 version",
+            overview="This is ISBEP Sim Code 11 July 2024 version",
             file_path=os.path.abspath(__file__),
             sample=Main(),
         )

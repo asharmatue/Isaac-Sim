@@ -1,7 +1,7 @@
 import time
 import numpy as np
 
-from settings import LOG_CONTEXT_SPACE, MEASURE_PERFORMANCE, DEBUG_LOG
+from Settings.settings import LOG_CONTEXT_SPACE, MEASURE_PERFORMANCE, DEBUG_LOG
 
 def mod(a, n):
     res = a - np.floor(a/n) * n

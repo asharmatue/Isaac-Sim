@@ -1,12 +1,12 @@
-from util import log, debug_log
-from communication.message import Message
+from Settings.util import log, debug_log
+from ServerCommunication.Connection.message import Message
 
 from socket import socket, SHUT_RD, SHUT_WR
 from queue import Queue 
 from threading import Thread
 import time
 from collections.abc import Callable
-from settings import DEBUG_LOG
+from Settings.settings import DEBUG_LOG
 
 class Connection():
 

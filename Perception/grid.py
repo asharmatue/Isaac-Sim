@@ -1,11 +1,11 @@
 import numpy as np
 from omni.isaac.core.objects import FixedCuboid
 
-from settings import input_shape, h, num_robots, r_avoid
-from settings import actual_environment_size_x, actual_environment_size_y, actual_environment_x_min, actual_environment_x_max, actual_environment_y_min, actual_environment_y_max
-from util import log
-from settings import show_log_grid
-from environment import create_cube, create_floor_cube
+from Settings.settings import input_shape, h, num_robots, r_avoid
+from Settings.settings import actual_environment_size_x, actual_environment_size_y, actual_environment_x_min, actual_environment_x_max, actual_environment_y_min, actual_environment_y_max
+from Settings.util import log
+from Settings.settings import show_log_grid
+from Environment.environment import create_cube, create_floor_cube
 
 def greyscale(shape_array, h):
     grey_grid = np.copy(shape_array).astype(float)

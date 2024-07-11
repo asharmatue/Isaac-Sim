@@ -1,18 +1,20 @@
-from directory import directory_setup
-directory_setup()
+import os, sys
+# Setup the directory when imported
+sys.path.append(str(os.path.dirname(__file__)))
 
-from util import log, debug_log, add_debug_context
-from communication.robot_data import RobotData, RandomRobot
-from robot import Robot
+from Settings.util import log, debug_log, add_debug_context
+from ServerCommunication.Connection.robot_data import RobotData, RandomRobot
+from Robot.robot import Robot
 import time
-from timeline import save_robot_data
-from communication.channel import send_message, channel
-from settings import SEND_TIMELINE
-from timeline import send_timeline, stop_timeline
+from ServerCommunication.Timelines.timeline import save_robot_data
+from ServerCommunication.Connection.channel import send_message, channel
+from Settings.settings import SEND_TIMELINE
+from ServerCommunication.Timelines.timeline import send_timeline, stop_timeline
 
 import json
 
 def send_robot_data(robot:Robot):
+    """Sending Robot Data"""
     data = RobotData(robot)
     message = json.dumps(data.__dict__)
     save_robot_data(data)

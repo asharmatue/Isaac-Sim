@@ -2,14 +2,17 @@ import numpy as np
 import omni
 from pxr import Gf, Sdf, UsdShade
 
-from settings import num_robots, entering_weight, exploration_weight, interaction_weight, angle_gain, forward_gain
-from settings import show_log_velocity_commands, SHOW_VEL_SPHERES, show_log_send_robot_actions
-from robot_setup import base_sphere_prim_path, base_sphere_prim_path_suffix
+from omni.isaac.wheeled_robots.controllers.wheel_base_pose_controller import WheelBasePoseController
+from omni.isaac.wheeled_robots.controllers.differential_controller import DifferentialController
+
+from Settings.settings import num_robots, entering_weight, exploration_weight, interaction_weight, angle_gain, forward_gain
+from Settings.settings import show_log_velocity_commands, SHOW_VEL_SPHERES, show_log_send_robot_actions
+from Robot.robot_setup import base_sphere_prim_path, base_sphere_prim_path_suffix
 from Controller.controllers import DiffDriveController
 from Controller.VelocityCommands.shape_entering_velocity import shape_entering_velocity, initialize_v_rho0_i
 from Controller.VelocityCommands.shape_exploration_velocity import shape_exploration_velocity
 from Controller.VelocityCommands.interaction_velocity import interaction_velocity
-from util import mod, log
+from Settings.util import mod, log
 
 velocity_controller = DiffDriveController()
 
@@ -116,6 +119,13 @@ def apply_velocities(robots, world):
 
 
 def setup_driver():
+
+    WBP_controller = WheelBasePoseController(name="wheel_base_pose_controller",
+                                                   open_loop_wheel_controller=
+                                                        DifferentialController(name="diff_controller",
+                                                                                wheel_radius=0.03, wheel_base=0.1125),
+                                                    is_holonomic=False)
+
     if not SHOW_VEL_SPHERES:
         return
     for _ in range(num_robots):

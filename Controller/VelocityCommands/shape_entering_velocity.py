@@ -1,10 +1,9 @@
 import numpy as np
 
-
-from grid import grey_grid, normalized_x_steps, normalized_y_steps
-from settings import num_robots, c_1, alpha, k_1
-from settings import actual_environment_x_min, actual_environment_y_min, show_log_get_robot_target_rho
-from util import log
+from Perception.grid import grey_grid, normalized_x_steps, normalized_y_steps
+from Settings.settings import num_robots, c_1, alpha, k_1
+from Settings.settings import actual_environment_x_min, actual_environment_y_min, show_log_get_robot_target_rho
+from Settings.util import log
 from Perception.neighbors import neighboring_i
 
 # Inital v_rho0_i set to 0

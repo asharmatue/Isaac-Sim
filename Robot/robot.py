@@ -1,9 +1,9 @@
 from omni.isaac.wheeled_robots.robots import WheeledRobot
 import numpy as np
-from grid import get_grid_rho, get_xi_rho
-from settings import actual_environment_x_min, actual_environment_y_min
-from data_values import addExportValue, ExportValue
-from grid import normalized_x_steps, normalized_y_steps
+from Perception.grid import get_grid_rho, get_xi_rho
+from Settings.settings import actual_environment_x_min, actual_environment_y_min
+from ExportSimulationData.data_values import addExportValue, ExportValue
+from Perception.grid import normalized_x_steps, normalized_y_steps
 
 import time
 

@@ -2,12 +2,10 @@ from omni.isaac.core.utils.nucleus import get_assets_root_path
 from omni.isaac.wheeled_robots.robots import WheeledRobot
 from omni.isaac.core.objects import VisualSphere
 
-import omni                                                     # Provides the core omniverse apis
-
 import numpy as np
 from Perception.lidar import create_lidars
-from omni.isaac.examples.user_examples.git_isaac_sim.settings import num_robots 
-from omni.isaac.examples.user_examples.git_isaac_sim.settings import lineMode, typeRobot, lidarsDrawLines, lidarsDrawPoints, SHOW_VEL_SPHERES
+from Settings.settings import num_robots 
+from Settings.settings import lineMode, typeRobot, lidarsDrawLines, lidarsDrawPoints, SHOW_VEL_SPHERES
 
 def create_robots(world, typeRobot, lineMode):
     assets_root_path = get_assets_root_path()

@@ -1,5 +1,5 @@
-from util import debug_log
-from communication.header import Header
+from Settings.util import debug_log
+from ServerCommunication.Connection.header import Header
 
 from socket import socket
 from collections.abc import Callable

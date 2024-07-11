@@ -1,4 +1,4 @@
-from shapes import *
+from Perception.shapes import *
 
 ##### Research Paper Parameters #####
 r_avoid = 0.4 # 1.5 in Paper 				# Hardcode avoid radius of robots, used for calculating l_cell
@@ -104,7 +104,7 @@ TIMELINE_RATE = 1 / 8 # Minimum time between saves in seconds.
 ##### Export Parameters #####
 
 EXPORT_DATA = True
-EXPORT_FILE_ADDRESS = "export/three_rooms_detail_data"
+EXPORT_FILE_ADDRESS = "output/three_rooms_detail_data" 
 
 ################################
 

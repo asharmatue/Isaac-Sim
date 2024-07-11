@@ -1,9 +1,9 @@
-from util import log, debug_log, add_debug_context
-from communication.connection import Connection
+from Settings.util import log, debug_log, add_debug_context
+from ServerCommunication.Connection.connection import Connection
 
 from socket import socket, AF_INET, SOCK_STREAM
 import time
-from settings import PORT_NUMBER, SERVER_IP
+from Settings.settings import PORT_NUMBER, SERVER_IP
 
 server_address = (SERVER_IP, PORT_NUMBER)
 

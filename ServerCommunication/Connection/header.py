@@ -1,4 +1,4 @@
-from util import log, debug_log
+from Settings.util import log, debug_log
 
 class Header():
     version = 0

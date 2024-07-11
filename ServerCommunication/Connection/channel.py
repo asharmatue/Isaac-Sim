@@ -1,6 +1,6 @@
-from util import log, debug_log
-from communication.TCP_client import create_tcp_connection
-from settings import CREATE_CONNECTION, DEBUG_LOG
+from Settings.util import log, debug_log
+from ServerCommunication.Connection.TCP_client import create_tcp_connection
+from Settings.settings import CREATE_CONNECTION, DEBUG_LOG
 
 
 class Channel():

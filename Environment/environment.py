@@ -4,8 +4,8 @@ import numpy as np
 import json
 import os
 
-from settings import SITUATION_NAME, SITUATIONS_PATH
-import util
+from Settings.settings import SITUATION_NAME, SITUATIONS_PATH
+import Settings.util as util
 
 def create_cube(world, path:str, name:str, id:int, position:np.ndarray, scale:np.ndarray, color:np.ndarray):
     world.scene.add(

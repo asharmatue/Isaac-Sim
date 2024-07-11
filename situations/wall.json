@@ -1,8 +1,0 @@
-{"wall":[
-    {"position":{"x":1.3065238,"y":2.80416584,"z":2.14320827},"scale":{"x":1.0,"y":6.0,"z":1.0},"color":{"red":1.0,"green":1.0,"blue":1.0}},
-    {"position":{"x":5.306524,"y":1.80416584,"z":2.14320827},"scale":{"x":8.0,"y":4.0,"z":1.0},"color":{"red":1.0,"green":1.0,"blue":1.0}},
-    {"position":{"x":9.306524,"y":2.80416584,"z":2.14320827},"scale":{"x":1.0,"y":6.0,"z":1.0},"color":{"red":1.0,"green":1.0,"blue":1.0}}],
-"robot":[
-    {"serialNumber":"00000002","position":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"pitch":0.0,"yaw":0.0,"roll":0.0}},
-    {"serialNumber":"00000001","position":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"pitch":0.0,"yaw":0.0,"roll":0.0}},
-    {"serialNumber":"00000000","position":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"pitch":0.0,"yaw":0.0,"roll":0.0}}]}

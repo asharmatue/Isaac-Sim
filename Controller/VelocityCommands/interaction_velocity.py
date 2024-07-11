@@ -4,11 +4,15 @@ import numpy as np
 import omni.isaac.core.utils.prims as prims_utils
 from omni.isaac.core.objects import VisualSphere
 
-from settings import num_robots, r_check, r_body, k_3
-from settings import REMOVE_REDUNDANT_OBSTACLE_POSITIONS, SHOW_ROBOT_OBSTACLE_POSITIONS, show_log_find_collision_points, show_interaction_velocity
-from util import log
+from Settings.settings import num_robots, r_check, r_body, k_3
+from Settings.settings import REMOVE_REDUNDANT_OBSTACLE_POSITIONS, SHOW_ROBOT_OBSTACLE_POSITIONS, show_log_find_collision_points, show_interaction_velocity
+from Settings.util import log
 from Perception.lidar import get_lidar
 from Perception.neighbors import neighboring_i
+
+# For Obstacle Collision Point Visualisation Spheres in find_colliion_points()
+obs_counter = 0
+highest_obs_index = [0 for _ in range(num_robots)]
 
 def mu_weight(arg):
 	mu = 0

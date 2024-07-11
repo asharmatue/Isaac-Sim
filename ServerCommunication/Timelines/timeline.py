@@ -1,7 +1,7 @@
-from settings import SITUATION_NAME, SAVE_TIMELINE, SEND_TIMELINE, LIMIT_TIMELINE_RATE, TIMELINE_RATE, TIMELINE_PATH
-from util import debug_log, log
-from communication.robot_data import RobotData
-from communication.channel import send_message
+from Settings.settings import SITUATION_NAME, SAVE_TIMELINE, SEND_TIMELINE, LIMIT_TIMELINE_RATE, TIMELINE_RATE, TIMELINE_PATH
+from Settings.util import debug_log, log
+from ServerCommunication.Connection.robot_data import RobotData
+from ServerCommunication.Connection.channel import send_message
 
 from threading import Thread
 import time

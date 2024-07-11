@@ -1,5 +1,5 @@
-from data_values import export_data
-from settings import EXPORT_FILE_ADDRESS
+from ExportSimulationData.data_values import export_data
+from Settings.settings import EXPORT_FILE_ADDRESS
 import os
 
 def getExportFileAddress():
