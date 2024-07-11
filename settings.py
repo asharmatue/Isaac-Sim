@@ -18,13 +18,13 @@ forward_gain = 0.02							# Hardcode parameters for differential drive
 angle_gain = 0.8							# |
 
 # Modifer
-remove_redundant_obstacle_positions = True	# Remove other robots' positions in find_collision_points()
+REMOVE_REDUNDANT_OBSTACLE_POSITIONS = True	# Remove other robots' positions in find_collision_points()
 ######################################
 
 
 ##### Visualisation Parameters #####
-show_vel_spheres = False						# Show Velocity command contributions visually?
-show_robot_obstacle_positions = False			# Show considerd Collision Points visually?
+SHOW_VEL_SPHERES = False						# Show Velocity command contributions visually?
+SHOW_ROBOT_OBSTACLE_POSITIONS = False			# Show considerd Collision Points visually?
 show_grid_vis = True							# Show Greyscale grid visually?
 show_old_grid_vis = False						# Show grid lines visually?
 #####################################

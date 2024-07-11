@@ -7,7 +7,7 @@ import omni                                                     # Provides the c
 import numpy as np
 from Perception.lidar import create_lidars
 from omni.isaac.examples.user_examples.git_isaac_sim.settings import num_robots 
-from omni.isaac.examples.user_examples.git_isaac_sim.settings import lineMode, typeRobot, lidarsDrawLines, lidarsDrawPoints, show_vel_spheres
+from omni.isaac.examples.user_examples.git_isaac_sim.settings import lineMode, typeRobot, lidarsDrawLines, lidarsDrawPoints, SHOW_VEL_SPHERES
 
 def create_robots(world, typeRobot, lineMode):
     assets_root_path = get_assets_root_path()
@@ -147,7 +147,7 @@ def create_vel_vis(world):
 def setup_robots(world):
     create_robots(world, typeRobot, lineMode)           # Create Robots
     create_lidars(lidarsDrawLines, lidarsDrawPoints)    # Create Lidars
-    if show_vel_spheres:
+    if SHOW_VEL_SPHERES:
         create_vel_vis(world)                           # Create Velocity Visualisation Spheres
     
     return
